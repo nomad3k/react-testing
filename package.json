@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers js:babel-core/register src/tests/ --watch --growl --recursive"
   },
   "author": "",
   "license": "ISC",
@@ -12,8 +12,11 @@
     "react": "^15.5.4"
   },
   "devDependencies": {
+    "babel-core": "^6.24.1",
     "chai": "^3.5.0",
     "enzyme": "^2.8.2",
+    "eslint": "^3.19.0",
+    "eslint-plugin-react": "^6.10.3",
     "mocha": "^3.3.0",
     "sinon": "^2.1.0"
   }
