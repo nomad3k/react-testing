@@ -14,8 +14,11 @@ describe("Actions", function() {
     });
 
     it("should inrement the state", function() {
+      // arrange
       var s = createStore({ value: 3 });
+      // act
       s.dispatch(Actions.increment());
+      // assert
       expect(s.getState().value).to.equal(4);
     });
 
@@ -29,8 +32,11 @@ describe("Actions", function() {
     });
 
     it("should decrement the state", function() {
+      // arrange
       var s = createStore({ value: 9 });
+      // act
       s.dispatch(Actions.decrement());
+      // assert
       expect(s.getState().value).to.equal(8);
     });
 
